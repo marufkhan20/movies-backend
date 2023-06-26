@@ -76,7 +76,7 @@ const registerController = async (req, res) => {
           email,
           password: hash,
           departmentName: departmentName,
-          profilePic: `/storage/books/${imagePath}`,
+          profilePic: `/storage/users/${imagePath}`,
         });
 
         await newUser.save();
