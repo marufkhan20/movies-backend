@@ -37,6 +37,7 @@ const registerController = async (req, res) => {
     let imagePath;
 
     if (profilePic) {
+      console.log("profilePic", profilePic);
       // upload image
       const buffer = Buffer.from(
         profilePic?.replace(/^data:image\/(png|jpg|jpeg|webp);base64,/, ""),
